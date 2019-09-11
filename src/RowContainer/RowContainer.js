@@ -7,9 +7,10 @@ export default class RowContainer extends Component {
         super(props);
         this.state = {
             values: [
-                { value1: "", value2: "", value3: "", },
-                { val: '' },
-                { val: 'THREE' }
+                { serverName: "", portNumber: "", databaseNAme: "", tableName: "", },
+                { serverName: "", portNumber: "", databaseNAme: "", tableName: "", },
+                { serverName: "", portNumber: "", databaseNAme: "", tableName: "", },
+
             ]
         };
         this.handleDelete = this.handleDelete.bind(this);
@@ -29,7 +30,7 @@ export default class RowContainer extends Component {
     addField() {
         this.setState({
             values: [...this.state.values,
-            { val: "" }
+            { serverName: "", portNumber: "", databaseNAme: "", tableName: "", },
             ]
         })
     }
